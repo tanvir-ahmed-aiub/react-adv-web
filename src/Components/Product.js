@@ -1,5 +1,7 @@
 import React from 'react'
-function Product(props){
+
+const Product=(props)=>{
+    
     return(
         <div>
             Name: {props.name}<br/>

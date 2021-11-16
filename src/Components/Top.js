@@ -1,10 +1,13 @@
 import React from 'react'
-function Top (){
+import {Link} from 'react-router-dom';
+
+const Top=()=>{
     return(
         <div>
-            <a href="">Home</a>
-            <a href="">Profile</a>
-            <a href="">Contact</a>
+            <Link to="/">Home</Link> &nbsp;&nbsp;
+            <Link to="/profile">Profile</Link>&nbsp;&nbsp;
+            <Link to="/contact">Contact</Link>&nbsp;&nbsp;
+            <Link to="/product/2">Product</Link>
         </div>
     )
 }
