@@ -10,6 +10,9 @@ import Contact  from './Components/Contact';
 import PDetails from './Components/PDetails';
 
 import Home from './Components/Home';
+import ColorChange from './Components/ColorChange';
+import EffectHook from './Components/EffectHook';
+import AllPosts from './Components/AllPosts';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,6 +31,15 @@ ReactDOM.render(
             </Route>
             <Route exact path="/product/:id">
               <PDetails/>
+            </Route>
+            <Route exact path="/color">
+              <ColorChange/>
+            </Route>
+            <Route exact path="/effect">
+              <EffectHook/>
+            </Route>
+            <Route exact path="/posts">
+              <AllPosts/>
             </Route>
         </Switch>
         <Footer/>
