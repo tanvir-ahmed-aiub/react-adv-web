@@ -5,6 +5,7 @@ import Post from './Post';
 
 const AllPosts = ()=>{
     const [posts, setPosts] = useState([]);
+    
 
     useEffect(()=>{
         axios.get("https://jsonplaceholder.typicode.com/posts")

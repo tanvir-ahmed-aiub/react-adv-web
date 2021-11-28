@@ -13,6 +13,7 @@ import Home from './Components/Home';
 import ColorChange from './Components/ColorChange';
 import EffectHook from './Components/EffectHook';
 import AllPosts from './Components/AllPosts';
+import Login from './Components/Login';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -40,6 +41,9 @@ ReactDOM.render(
             </Route>
             <Route exact path="/posts">
               <AllPosts/>
+            </Route>
+            <Route exact path="/login">
+              <Login/>
             </Route>
         </Switch>
         <Footer/>
