@@ -12,6 +12,7 @@ const Top=()=>{
             <Link to="/effect">EffectHook</Link>&nbsp;&nbsp;
             <Link to="/posts">Posts</Link>&nbsp;&nbsp;
             <Link to="/login">Login</Link>&nbsp;&nbsp;
+            <Link to="/plist">Products</Link>&nbsp;&nbsp;
         </div>
     )
 }

@@ -14,7 +14,17 @@ import ColorChange from './Components/ColorChange';
 import EffectHook from './Components/EffectHook';
 import AllPosts from './Components/AllPosts';
 import Login from './Components/Login';
+import axios from 'axios';
+import APIProducts from './Components/APIProducts';
 
+//localStorage.removeItem('user'); when user will logout
+var token=null;
+if(localStorage.getItem('user')){
+  var obj = JSON.parse(localStorage.getItem('user'));
+  token = obj.access_token;
+}
+axios.defaults.baseURL="http://localhost:8000/";
+axios.defaults.headers.common["Authorization"] = token;
 ReactDOM.render(
   <React.StrictMode>
     
@@ -44,6 +54,9 @@ ReactDOM.render(
             </Route>
             <Route exact path="/login">
               <Login/>
+            </Route>
+            <Route exact path="/plist">
+              <APIProducts/>
             </Route>
         </Switch>
         <Footer/>
